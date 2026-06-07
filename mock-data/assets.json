@@ -1,0 +1,64 @@
+{
+  "assets": [
+    {
+      "id": "ASSET-001",
+      "name": "Turbine Unit 1",
+      "type": "EQUIPMENT",
+      "status": "ACTIVE",
+      "location": "Plant A - Main Hall",
+      "supplier_id": "SUPP-001",
+      "inspection_frequency_days": 30,
+      "last_inspection_result": "PASS"
+    },
+    {
+      "id": "ASSET-002",
+      "name": "Compressor Unit 2",
+      "type": "EQUIPMENT",
+      "status": "ACTIVE",
+      "location": "Plant A - Comp Building",
+      "supplier_id": "SUPP-002",
+      "inspection_frequency_days": 30,
+      "last_inspection_result": "PASS"
+    },
+    {
+      "id": "ASSET-003",
+      "name": "Pump Station 3",
+      "type": "EQUIPMENT",
+      "status": "ACTIVE",
+      "location": "Plant B - Hydraulics",
+      "supplier_id": "SUPP-003",
+      "inspection_frequency_days": 14,
+      "last_inspection_result": "FAIL"
+    },
+    {
+      "id": "ASSET-004",
+      "name": "Valve Assembly 4",
+      "type": "EQUIPMENT",
+      "status": "MAINTENANCE",
+      "location": "Plant A - Pipeline",
+      "supplier_id": "SUPP-004",
+      "inspection_frequency_days": 60,
+      "last_inspection_result": null
+    },
+    {
+      "id": "ASSET-005",
+      "name": "Tank Storage A1",
+      "type": "TANK",
+      "status": "ACTIVE",
+      "location": "Plant B - Storage",
+      "supplier_id": "SUPP-006",
+      "inspection_frequency_days": 90,
+      "last_inspection_result": "PASS"
+    },
+    {
+      "id": "ASSET-006",
+      "name": "Heat Exchanger 5",
+      "type": "EQUIPMENT",
+      "status": "ACTIVE",
+      "location": "Plant C - Thermal",
+      "supplier_id": "SUPP-007",
+      "inspection_frequency_days": 60,
+      "last_inspection_result": "PASS"
+    }
+  ]
+}

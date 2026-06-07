@@ -1,0 +1,63 @@
+{
+  "rules": [
+    {
+      "id": "RULE-001",
+      "name": "ISO 14001:2015 Environmental Management",
+      "standard": "ISO-14001",
+      "description": "International standard for environmental management systems",
+      "version": "2015",
+      "effective_date": "2023-01-01",
+      "controls": [
+        {
+          "id": "CTRL-001",
+          "name": "Environmental Aspects Identification",
+          "description": "All environmental aspects must be identified and documented",
+          "severity": "HIGH",
+          "evidence_required": true
+        },
+        {
+          "id": "CTRL-002",
+          "name": "Legal Compliance Tracking",
+          "description": "Compliance with environmental laws must be tracked",
+          "severity": "CRITICAL",
+          "evidence_required": true
+        },
+        {
+          "id": "CTRL-003",
+          "name": "Waste Management Documentation",
+          "description": "All waste disposal activities must be documented",
+          "severity": "HIGH",
+          "evidence_required": true
+        },
+        {
+          "id": "CTRL-004",
+          "name": "Emissions Monitoring",
+          "description": "Emissions must be monitored and recorded",
+          "severity": "HIGH",
+          "evidence_required": true
+        },
+        {
+          "id": "CTRL-005",
+          "name": "Resource Consumption Tracking",
+          "description": "Energy and water consumption must be tracked",
+          "severity": "MEDIUM",
+          "evidence_required": true
+        },
+        {
+          "id": "CTRL-006",
+          "name": "Supplier Environmental Requirements",
+          "description": "Suppliers must meet environmental standards",
+          "severity": "MEDIUM",
+          "evidence_required": true
+        },
+        {
+          "id": "CTRL-007",
+          "name": "Equipment Maintenance Schedule",
+          "description": "All equipment must follow maintenance schedule",
+          "severity": "MEDIUM",
+          "evidence_required": true
+        }
+      ]
+    }
+  ]
+}
