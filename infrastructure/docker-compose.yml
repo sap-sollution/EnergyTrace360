@@ -21,7 +21,7 @@ services:
       timeout: 5s
       retries: 5
 
-  # Node.js Backend Services
+  # Node.js Backend
   backend:
     build:
       context: ./backend
@@ -30,8 +30,9 @@ services:
     environment:
       NODE_ENV: development
       DATABASE_URL: postgresql://energytrace:energytrace360@postgres:5432/energytrace360
-      JWT_SECRET: your-secret-key-change-in-production
+      JWT_SECRET: dev-secret-key-change-in-production
       PORT: 3001
+      SAP_ADAPTER_URL: http://sap-adapter:3002
     ports:
       - "3001:3001"
     depends_on:
@@ -41,8 +42,10 @@ services:
       - ./backend:/app
       - /app/node_modules
     command: npm run dev
+    networks:
+      - energytrace360
 
-  # SAP Mock Adapter
+  # SAP MM Mock Adapter
   sap-adapter:
     build:
       context: ./backend/sap-mock-adapter
@@ -54,6 +57,8 @@ services:
     ports:
       - "3002:3002"
     command: npm run dev
+    networks:
+      - energytrace360
 
   # React Frontend
   frontend:
@@ -72,10 +77,12 @@ services:
       - ./frontend:/app
       - /app/node_modules
     command: npm start
+    networks:
+      - energytrace360
 
 volumes:
   postgres_data:
 
 networks:
-  default:
-    name: energytrace360-network
+  energytrace360:
+    driver: bridge
